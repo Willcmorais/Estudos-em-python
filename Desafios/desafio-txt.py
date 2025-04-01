@@ -29,8 +29,3 @@ print('UNIDADE: {}'.format(u))
 print('DEZENA: {}'.format(d))
 print('CENTENA: {}'.format(c))
 print('MILHAR: {}'.format(m))
-
-# Vai pegar o nome da minha cidade, transformar para apenas primeira letra em maiúsculo e vai perguntar se tem esse nome nela, se tiver é tru
-city = input('Informe qual é a sua cidade: ').capitalize()
-
-print('Recife' in city)

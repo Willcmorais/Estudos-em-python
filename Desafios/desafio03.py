@@ -40,7 +40,6 @@ random.shuffle(lista)
 print('a ordem dos grupos sorteados foi {}!'.format(lista))
 
 # fazer um programa que abra e reproduza um áudio de um arquivo mp3
-
 pygame.init()  # inicia a bilioteca
 pygame.mixer.music.load('gorila.mp3')  # carrega o documento em formato de music informado com o mixer pelo pygame
 pygame.mixer.music.play()  # aqui ele vai dar o play na música
