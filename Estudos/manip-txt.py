@@ -19,7 +19,7 @@ print(frase[9::3])  # falamos que vai se iniciar no espaço 9, vai até o final 
 print(len(frase))  # retorna a quantidade de espaços no container da variável
 print(frase.count('o'))  # vai contar quantas vezes o 'o' aparece na sentença
 print(frase.count('o', 0, 14))  # pega quantas letras 'o' existem entre o espaço de 0 até 14
-print(frase.find('deo'))  # pega na sentença aonde inicia o 'deo'
+print(frase.find('deo'))  # pega na sentença a posição que se inicia o 'deo'
 print(frase.find('Android'))  # como não existe ele aparece -1, ou seja uma sentença falsa
 print('Curso' in frase)  # pergunta se na variável frase existe a palavra 'Curso', se sim, ele retorna como true
 
