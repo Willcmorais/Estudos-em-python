@@ -1,7 +1,6 @@
 # Analisa o nome, transforma para maiúsculo e minúsculo, conta quantas letras tem o nome sem espaços e diz o primeiro nome com qnt de letras
 # variável que recebe um input str.
 name = str(input('Digite seu nome completo: ').strip())  # tira os espaços que podem aparecer antes ou depois do nome
-
 print('Analisando nome........')
 print('O nome transformado para maiúsculo: {}'.format(name.upper()))
 print('O nome transformado para minúsculo: {}'.format(name.lower()))
@@ -12,6 +11,7 @@ print('Seu nome tem {} letras'.format(len(name) - name.count(' ')))
 separa = name.split()  # separa vai receber o nome separado das listas, o primeiro nome inicia no 0
 # vai mostrar meu primeiro nome que está localizado na posição da lista 0 e a quantidade de espaços que ele tem
 print('Seu primeiro nome é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
+########################################################################################################################
 
 # vai dizer qual número está na unidade, na dezena, na centena e na unidade a partir de uma fórmula matemática
 # num = str(input('Digite um número: '))
