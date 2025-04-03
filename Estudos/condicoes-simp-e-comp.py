@@ -1,8 +1,6 @@
 # Condições são tipos de caminhos que podem ser feitos de um ponto até outro de formas diferentes.
 # É feito por uma estrutura sequencial de instruções, ou é executado uma intrução, ou é exucatada outra, nunca terão duas.
 # Utilizamos o 'if' para estruturas simples e 'if e else' para compostas.
-########################################################################################################################
-
 tempo = int(input('Quantos anos tem seu carro: '))
 # Outra forma de representar o if. print Carro novo se o tempo for menor ou igual a 3, senão, print carro velho.
 print('Carro Novo!' if tempo <= 3 else 'Carro Velho!')
@@ -32,7 +30,3 @@ else:
     print('O aluno alcançou a média da disciplina. PARABÉNS!')
 print('==== FIM =====')
 ########################################################################################################################
-
-
-
-
