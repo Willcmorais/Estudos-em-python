@@ -33,7 +33,7 @@ print('AGORA, INFORME ABAIXO DOIS NÚMEROS QUAISQUER. VOU TE FALAR QUAL O MENOR 
 print('-=-' * 20)
 n1 = int(input('Informe um número: '))
 n2 = int(input('Informe outro número: '))
-if n1 > n2:
-    print('O maior número é o {} e o menor é {}'.format(n1, n2))
-else:
-    print('O maior número é o {} e o menor é {}'.format(n2, n1))
+n3 = int(input('Informe outro número: '))
+if n1 > n2 and n1 > n3:
+    print('O maior número é o {} e o menor é {}'.format(n1, n3))
+print('O maior número é o {} e o menor é {}'.format(n2, n1))

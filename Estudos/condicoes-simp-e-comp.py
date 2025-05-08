@@ -7,7 +7,7 @@ print('Carro Novo!' if tempo <= 3 else 'Carro Velho!')
 # if tempo <= 3:
 #    print('Carro Novo!')
 # else:
-#    print('Carro Velho!')
+#    print('Carr                        o Velho!')
 print('---- FIM ----')
 ########################################################################################################################
 

@@ -3,31 +3,33 @@
 from random import randint
 
 print('-=-' * 20)  # faz com que printemos o que está informado 20 vezes
-print('SORTEEI UM NÚMERO ENTRE 0 E 5, ACHA QUE CONSEGUE ADIVINHAR?')
+print('\033[7m SORTEEI UM NÚMERO ENTRE 0 E 5, ACHA QUE CONSEGUE ADIVINHAR? \033[m')
 print('-=-' * 20)
 n1 = randint(0, 5)  # faz com que o n1 receba um número aleatório que o computador sortear entre 0 e 5
-n2 = int(input('Informe um número inteiro entre 0 e 5: '))  # recebe a tentativa de chute
+n2 = int(
+    input('Informe um número inteiro entre \033[1;32m0\033[m e \033[1;32m5\033[m:  '))  # recebe a tentativa de chute
 print('PROCESSANDO SUA RESPOSTA...')
 # se um valor for igual ao outro vai dizer que acertamos, se não, diz que erramos
 print(
-    'Parabéns! Você acertou o número sorteado.' if n1 == n2 else 'Que pena, você errou! Tente novamente mais tarde.')
+    '\033[1;32mParabéns! Você acertou o número sorteado.\033[m' if n1 == n2 else '\033[1;31mQue pena, você errou! Tente novamente mais tarde.\033[m')
 print('')
 ##########################################################################################################################
 
 # Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80, mostre que ele foi multado. A multa vai custar 7 por cada km acima do limite
 print('-=-' * 20)
-print('RADAR ELETRÔNICO! LIMITE DE VELOCIDADE: 80KM/H')
+print('\033[1;;41m RADAR ELETRÔNICO! LIMITE DE VELOCIDADE: 80KM/H \033[m')
 print('-=-' * 20)
 vel = randint(50, 100)
-print('O veículo passou no radar com a velocidade de {}km/h'.format(vel))
+print('O veículo passou no radar com a velocidade de \033[7m {}km/h \033[m'.format(vel))
 if vel <= 80:
-    print('Está tudo bem, o veículo está no limite de velocidade!')
+    print('\033[1;32mEstá tudo bem, o veículo está no limite de velocidade!\033[m')
 else:
     multa = (vel - 80) * 7
     velExc = vel - 80
-    print('O veículo excedeu o limite de 80km/h permitido pelo radar. O excesso foi de {}km'.format(velExc))
+    print('\033[1;31mO veículo excedeu o limite de 80km/h permitido pelo radar. O excesso foi de {}km\033[m'.format(
+        velExc))
     print('O valor da multa será aplicada de acordo com a velocidade excedida...')
-    print('==== VALOR DA MULTA: R${:.2f} ===='.format(multa))
+    print('\033[1;30;43m ==== VALOR DA MULTA: R${:.2f} ==== \033[m'.format(multa))
 print('')
 ##########################################################################################################################
 
